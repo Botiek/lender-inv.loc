@@ -762,3 +762,22 @@ input[disabled='disabled'] {
 .input-control.error input {
   border: 1px solid #ff0000 !important;
 }
+.input-control {
+  position: relative;
+}
+.password-who {
+  background: url(/img/help-circle.svg) no-repeat;
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  right: 15px;
+  top: 34px;
+}
+.password-togle {
+  background: url(/img/eye.svg) no-repeat;
+  width: 20px;
+  height: 18px;
+  position: absolute;
+  right: 15px;
+  top: 36px;
+}

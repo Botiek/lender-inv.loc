@@ -64,6 +64,25 @@
                     <div class="input-control disabled">
                         <input type="text" name="tel" id="tel" placeholder="disabled" disabled="disabled">
                     </div>
+                    <div class="input-control password">
+                        <input type="password" name="password" id="password-first" placeholder="пароль">
+                        <div class="password-who" title="тут инфа про пароль"></div>
+                    </div>
+                    <div class="input-control password">
+                        <input type="password" name="password" id="password" placeholder="пароль еще раз">
+                        <div class="password-togle" onclick="togglePassword()" title="нажмите что бы показать пароль">
+                        </div>
+                        <script>
+                            function togglePassword() {
+                                var x = document.getElementById("password");
+                                if (x.type === "password") {
+                                    x.type = "text";
+                                } else {
+                                    x.type = "password";
+                                }
+                            }
+                        </script>
+                    </div>
                     <input type="submit" value="Далее">
                 </form>
                 <a href="" class="have-acc">У меня уже есть аккаунт</a>
