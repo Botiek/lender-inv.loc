@@ -55,7 +55,7 @@ input#serch {
 }
 .serch-control:after {
   content: '';
-  background: url(/img/fi_search.svg) no-repeat;
+  background: url(../img/fi_search.svg) no-repeat;
   width: 41px;
   height: 23px;
   position: absolute;
@@ -443,7 +443,7 @@ a.btn-border {
   font-weight: bold;
   padding: 17px 62px 17px 20px;
   position: relative;
-  background: url(/img/arr_r_c.svg) no-repeat 90%;
+  background: url(../img/arr_r_c.svg) no-repeat 90%;
 }
 .row.progres .col-md-12 {
   display: flex;
@@ -507,7 +507,7 @@ img.big-img {
 }
 a.boc-ico {
   padding-left: 22px;
-  background: url(/img/doc.svg) no-repeat 0% 50%;
+  background: url(../img/doc.svg) no-repeat 0% 50%;
   color: #535353;
 }
 a.btn-border-edit {
@@ -521,7 +521,7 @@ a.btn-border-edit {
   font-weight: bold;
   padding: 17px 20px 17px 45px;
   position: relative;
-  background: url(/img/edit.svg) no-repeat 9% 50%;
+  background: url(../img/edit.svg) no-repeat 9% 50%;
 }
 .row.profile-blc h2.title-profilw {
   margin-bottom: 25px;
@@ -766,7 +766,7 @@ input[disabled='disabled'] {
   position: relative;
 }
 .password-who {
-  background: url(/img/help-circle.svg) no-repeat;
+  background: url(../img/help-circle.svg) no-repeat;
   width: 23px;
   height: 23px;
   position: absolute;
@@ -774,7 +774,7 @@ input[disabled='disabled'] {
   top: 34px;
 }
 .password-togle {
-  background: url(/img/eye.svg) no-repeat;
+  background: url(../img/eye.svg) no-repeat;
   width: 20px;
   height: 18px;
   position: absolute;
