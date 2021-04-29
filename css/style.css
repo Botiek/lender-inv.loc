@@ -796,3 +796,40 @@ input[disabled='disabled'] {
   margin-right: auto;
   margin-left: auto;
 }
+#file-input {
+  display: none;
+}
+
+label[for='file-input'] * {
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+label[for='file-input'] span {
+  margin-left: 10px;
+}
+.file-btn {
+  border: 1px solid #d8d5ff;
+  display: inline-flex;
+  justify-items: center;
+  line-height: 1;
+  align-items: center;
+  border-radius: 10px;
+  color: #766de3;
+  font-weight: bold;
+  padding: 8px 8px 7px 32px;
+  position: relative;
+  background: url(../img/file_1.svg) no-repeat 6% 50%;
+  font-size: 14px;
+}
+.profile-item-wrap input {
+  background: #f7f7f7;
+  height: 37px;
+  border-radius: 7px;
+  width: 100%;
+  padding: 5px 15px;
+  margin-top: 0;
+}
+.profile-item-wrap .val {
+  width: 100%;
+}
