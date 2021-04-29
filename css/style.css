@@ -63,7 +63,9 @@ input#serch {
   top: 15px;
   left: 18px;
 }
-
+input#serch {
+  margin-top: 0;
+}
 .tools {
   display: flex;
   align-items: center;
@@ -89,6 +91,7 @@ input {
   transition-delay: 0.3s;
   background: #fff;
   box-shadow: 3px 0px 20px #ededed;
+  z-index: 1;
 }
 .menu:hover {
   width: 235px;
@@ -780,4 +783,16 @@ input[disabled='disabled'] {
   position: absolute;
   right: 15px;
   top: 36px;
+}
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 100%;
+  padding-right: 100px;
+  padding-left: 100px;
+  margin-right: auto;
+  margin-left: auto;
 }
