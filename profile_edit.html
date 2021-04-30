@@ -181,31 +181,54 @@
                 </div>
                 <div class="profile-item-wrap">
                     <div class="name">Ф.И.О</div>
-                    <div class="val"><input type="text" placeholder="Иванов Иван Иванович"></div>
+                    <div class="val">
+                        <div class="input-control">
+                            <input type="text" placeholder="Иванов Иван Иванович">
+                        </div>
+                    </div>
                 </div>
                 <div class="profile-item-wrap">
                     <div class="name">Пол</div>
-                    <div class="val"><input type="text" placeholder="Мужской"></div>
+                    <div class="val sex">
+                        <div class="input-control">
+                            <input type="radio" class="radio" id="radio-1" name="sex" value="Мужской" />
+                            <label for="radio-1">Мужской</label>
+                        </div>
+                        <div class="input-control">
+                            <input type="radio" class="radio" id="radio-2" name="sex" value="Женский" />
+                            <label for="radio-2">Женский</label>
+                        </div>
+                    </div>
                 </div>
                 <div class="profile-item-wrap">
                     <div class="name">Дата рождения</div>
-                    <div class="val"><input type="text" placeholder="17.07.1980"></div>
+                    <div class="val">
+                        <div class="input-control"><input type="text" placeholder="17.07.1980"></div>
+                    </div>
                 </div>
                 <div class="profile-item-wrap">
                     <div class="name">Место рождения</div>
-                    <div class="val"><input type="text" placeholder="Москва"></div>
+                    <div class="val">
+                        <div class="input-control"><input type="text" placeholder="Москва"></div>
+                    </div>
                 </div>
                 <div class="profile-item-wrap">
                     <div class="name">Адрес регистрации</div>
-                    <div class="val"><input type="text" placeholder="Улица Пушкина, дом 12"></div>
+                    <div class="val">
+                        <div class="input-control"><input type="text" placeholder="Улица Пушкина, дом 12"></div>
+                    </div>
                 </div>
                 <div class="profile-item-wrap">
                     <div class="name">ИНН</div>
-                    <div class="val"><input type="text" placeholder="78192390123884"></div>
+                    <div class="val">
+                        <div class="input-control"><input type="text" placeholder="78192390123884"></div>
+                    </div>
                 </div>
                 <div class="profile-item-wrap">
                     <div class="name">СНИЛС</div>
-                    <div class="val"><input type="text" placeholder="7172-2313-4141-5511"></div>
+                    <div class="val">
+                        <div class="input-control"><input type="text" placeholder="7172-2313-4141-5511"></div>
+                    </div>
                 </div>
                 <div class="profile-item-wrap">
                     <div class="name">Эл. почта</div>
@@ -213,7 +236,9 @@
                 </div>
                 <div class="profile-item-wrap">
                     <div class="name">Телефон</div>
-                    <div class="val"><input type="text" placeholder="+7 (906) 385-83-31"></div>
+                    <div class="val">
+                        <div class="input-control"><input type="text" placeholder="+7 (906) 385-83-31"></div>
+                    </div>
                 </div>
                 <div class="btn-control">
                     <a href="" class="btn-border-edit">Сохранить</a>
@@ -225,19 +250,27 @@
                 <h2 class="title-profilw">Паспортные данные</h2>
                 <div class="profile-item-wrap">
                     <div class="name">Серия и номер</div>
-                    <div class="val"><input type="text" placeholder="9999 999 999"></div>
+                    <div class="val">
+                        <div class="input-control"><input type="text" placeholder="9999 999 999"></div>
+                    </div>
                 </div>
                 <div class="profile-item-wrap">
                     <div class="name">Код подразделения</div>
-                    <div class="val"><input type="text" placeholder="999-999"></div>
+                    <div class="val">
+                        <div class="input-control"><input type="text" placeholder="999-999"></div>
+                    </div>
                 </div>
                 <div class="profile-item-wrap">
                     <div class="name">Кем выдан</div>
-                    <div class="val"><input type="text" placeholder="ГУ МВД по г. Москве"></div>
+                    <div class="val">
+                        <div class="input-control"><input type="text" placeholder="ГУ МВД по г. Москве"></div>
+                    </div>
                 </div>
                 <div class="profile-item-wrap">
                     <div class="name">Дата выдачи</div>
-                    <div class="val"><input type="text" placeholder="17.08.92"></div>
+                    <div class="val">
+                        <div class="input-control"><input type="text" placeholder="17.08.92"></div>
+                    </div>
                 </div>
                 <div class="btn-control">
                     <a href="" class="btn-border-edit">Сохранить</a>
@@ -249,38 +282,44 @@
                 <h2 class="title-profilw">Документы</h2>
                 <div class="profile-item-wrap">
                     <div class="name">Паспорт лицевая страница</div>
-                    <div class="val"><input type="file" id="file-input">
-                        <label for="file-input">
-                            <div class="file-btn">Прикрепите файл</div>
-                            <span></span>
-                        </label>
+                    <div class="val">
+                        <div class="input-control">
+                            <input type="file" id="file-input">
+                            <label for="file-input">
+                                <div class="file-btn">Прикрепите файл</div>
+                                <span></span>
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div class="profile-item-wrap">
                     <div class="name">Паспорт с пропиской</div>
-                    <div class="val"><input type="file" id="file-input">
-                        <label for="file-input">
-                            <div class="file-btn">Прикрепите файл</div>
-                            <span></span>
-                        </label>
+                    <div class="val">
+                        <div class="input-control">
+                            <input type="file" id="file-input">
+                            <label for="file-input">
+                                <div class="file-btn">Прикрепите файл</div>
+                                <span></span>
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div class="profile-item-wrap">
                     <div class="name">Копия СНИЛС</div>
-                    <div class="val"><input type="file" id="file-input">
-                        <label for="file-input">
-                            <div class="file-btn">Прикрепите файл</div>
-                            <span></span>
-                        </label>
+                    <div class="val">
+                        <div class="input-control">
+                            <input type="file" id="file-input">
+                            <label for="file-input">
+                                <div class="file-btn">Прикрепите файл</div>
+                                <span></span>
+                            </label>
+                        </div>
                     </div>
                 </div>
                 <div class="btn-control">
                     <a href="" class="btn-border-edit">Сохранить</a>
                 </div>
             </div>
-        </div>
-        <div class="row">
-
         </div>
     </div>
 

@@ -833,3 +833,56 @@ label[for='file-input'] span {
 .profile-item-wrap .val {
   width: 100%;
 }
+.radio {
+  vertical-align: top;
+  width: 17px;
+  height: 17px;
+  margin: 0 3px 0 0;
+}
+.radio + label {
+  cursor: pointer;
+}
+.radio:not(checked) {
+  position: absolute;
+  opacity: 0;
+}
+.radio:not(checked) + label {
+  position: relative;
+  padding: 0 0 0 35px;
+}
+.radio:not(checked) + label:before {
+  content: '';
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid #cdd1da;
+  border-radius: 50%;
+  background: #fff;
+}
+.radio:not(checked) + label:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: linear-gradient(180deg, #6860cc 0%, #857bfb 100%);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: all 0.2s;
+}
+.radio:checked + label:after {
+  opacity: 1;
+}
+.radio:focus + label:before {
+  box-shadow: 0 0 0 3px rgba(138, 65, 255, 0.164);
+}
+.val.sex {
+  display: flex;
+}
+.val.sex .input-control {
+  margin-right: 34px;
+}
