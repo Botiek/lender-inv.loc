@@ -513,7 +513,7 @@ a.boc-ico {
   background: url(../img/doc.svg) no-repeat 0% 50%;
   color: #535353;
 }
-a.btn-border-edit {
+.btn-border-edit {
   border: 2px solid #7c73ed;
   display: inline-flex;
   justify-items: center;
