@@ -1,28 +1,17 @@
 $('document').ready(function () {
-  var $file = $('#file-input'),
-    $label = $file.next('label'),
-    $labelText = $label.find('span'),
-    $labelRemove = $('i.remove'),
-    labelDefault = $labelText.text();
-
-  // on file change
-  $file.on('change', function (event) {
-    var fileName = $file.val().split('\\').pop();
-    if (fileName) {
-      console.log($file);
-      $labelText.text(fileName);
-      $labelRemove.show();
-    } else {
-      $labelText.text(labelDefault);
-      $labelRemove.hide();
-    }
+  $('.file-btn').click(function () {
+    $(this).closest('label').closest('div').find('input').trigger('click');
   });
 
-  // Remove file
-  $labelRemove.on('click', function (event) {
-    $file.val('');
-    $labelText.text(labelDefault);
-    $labelRemove.hide();
-    console.log($file);
+  $('.file-input').on('change', function () {
+    let fileName = $(this).val().split('\\').pop();
+    $(this).closest('div').find('label').find('span').text(fileName);
+    $(this).closest('div').find('.remove').show();
+  });
+
+  $('.remove').click(function () {
+    $(this).closest('div').find('input').val('');
+    $(this).closest('div').find('span').text('');
+    $(this).hide();
   });
 });
