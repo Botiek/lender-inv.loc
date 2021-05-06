@@ -959,7 +959,7 @@ select {
   width: 25%;
 }
 .mesage-wrap {
-  max-width: 420px;
+  max-width: 80%;
   position: relative;
 }
 .mesage-row.in {
@@ -1028,6 +1028,101 @@ p.mesage-body {
   z-index: 1;
   position: relative;
 }
-.tab-content.ofer.chat .btn-control {
+
+table.tg {
+  width: 100%;
+  margin-top: 30px;
+}
+th,
+td {
+  padding: 5px;
+}
+tbody tr {
+  border-bottom: 1px solid #ededed;
+}
+.support-table th,
+.support-table td {
+  padding: 10px;
+  white-space: nowrap;
+  max-width: 162px;
+  overflow: hidden;
+  padding-right: 23px;
+  text-overflow: ellipsis;
+}
+.support-table tr {
+  padding: 20px 0;
+}
+.support-table table.tg tr:nth-child(2n) {
+  background: linear-gradient(
+    180deg,
+    rgb(104 96 204 / 10%) 0%,
+    rgb(133 123 251 / 3%) 100%
+  );
+}
+.support-table table.tg:hover tr:nth-child(2n) {
+  background: none;
+}
+.support-table table.tg tbody > tr:hover {
+  background: linear-gradient(
+    180deg,
+    rgb(104 96 204 / 10%) 0%,
+    rgb(133 123 251 / 3%) 100%
+  ) !important;
+  cursor: pointer;
+}
+span.status {
+  display: inline-block;
+  background: url(../img/envelope.svg) no-repeat;
+  height: 15px;
+  width: 15px;
+  background-size: contain !important;
+  margin-right: 10px;
+}
+span.status.new-mesage {
+  background: url(../img/lamp.svg) no-repeat;
+  -webkit-animation: blink-1 4s cubic-bezier(0.6, 0.04, 0.98, 0.335) 5s infinite
+    both;
+  animation: blink-1 4s cubic-bezier(0.6, 0.04, 0.98, 0.335) 5s infinite both;
+}
+@-webkit-keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+@keyframes blink-1 {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+.wrap-ch-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-top: 20px;
+}
+
+.file-area {
+  display: inline-block;
+  background: #fff url(../img/doc.svg) no-repeat 5px 50%;
+  box-shadow: 0px 0px 10px #e2e0ff;
+  padding: 5px 15px;
+  margin-top: 20px;
+  border-radius: 6px;
+  padding-left: 26px;
+}
+.mesage-row.in .file-area {
+  color: #333;
+  box-shadow: 0px 0px 10px #73727b;
 }
