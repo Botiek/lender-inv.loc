@@ -765,7 +765,9 @@ a.have-acc {
 input[disabled='disabled'] {
   background: #fafafa;
 }
-.input-control.error input {
+.input-control.error input,
+.error > select,
+.error textarea {
   border: 1px solid #ff0000 !important;
 }
 .input-control {
@@ -961,6 +963,7 @@ select {
 .mesage-wrap {
   max-width: 80%;
   position: relative;
+  margin-bottom: 35px;
 }
 .mesage-row.in {
   display: flex;
@@ -1125,4 +1128,17 @@ span.status.new-mesage {
 .mesage-row.in .file-area {
   color: #333;
   box-shadow: 0px 0px 10px #73727b;
+}
+
+p.mesage-date {
+  margin: 0;
+  font-size: 12px;
+  text-align: right;
+}
+.status-verify .val {
+  background: url(../img/check.svg) no-repeat 0px 50%;
+  padding-left: 20px;
+}
+.row.profile-blc.status-no-verify .col-md-12 {
+  background: #fafafa;
 }
