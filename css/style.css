@@ -82,6 +82,57 @@ input#serch {
 input {
   border: 0 !important;
 }
+a.chat-start {
+  display: flex;
+  background: rgb(114 105 221 / 8%);
+  padding: 5px 10px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+a.chat-start.unread {
+  -webkit-animation: jello-horizontal 4s infinite both;
+  animation: jello-horizontal 4s infinite both;
+}
+.balloon-count {
+  margin-left: 5px;
+  color: #6c64d3;
+}
+
+@keyframes jello-horizontal {
+  0% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  89% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+  90% {
+    -webkit-transform: scale3d(1.25, 0.75, 1);
+    transform: scale3d(1.25, 0.75, 1);
+  }
+  92% {
+    -webkit-transform: scale3d(0.75, 1.25, 1);
+    transform: scale3d(0.75, 1.25, 1);
+  }
+  94% {
+    -webkit-transform: scale3d(1.15, 0.85, 1);
+    transform: scale3d(1.15, 0.85, 1);
+  }
+  96% {
+    -webkit-transform: scale3d(0.95, 1.05, 1);
+    transform: scale3d(0.95, 1.05, 1);
+  }
+  98% {
+    -webkit-transform: scale3d(1.05, 0.95, 1);
+    transform: scale3d(1.05, 0.95, 1);
+  }
+  100% {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+
 .menu {
   position: fixed;
   top: 0;
