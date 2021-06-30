@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="17.86" height="17.86" viewBox="0 0 5.23 5.23"
+    shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality"
+    fill-rule="evenodd" clip-rule="evenodd" stroke="url(#paint0_linear)">
+    <defs>
+        <linearGradient id="paint0_linear" x1="7" y1="7" x2="1" y2="7" gradientUnits="userSpaceOnUse">
+            <stop stop-color="#6860CC" />
+            <stop offset="1" stop-color="#857BFB" />
+        </linearGradient>
+    </defs>
+    <g id="Слой_x0020_1">
+        <path class="fil0 str0" d="M2.62.29v4.65M.29 2.62h4.65" />
+    </g>
+</svg>
