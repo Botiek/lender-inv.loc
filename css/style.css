@@ -526,11 +526,18 @@ a.back img {
 img.big-img {
   width: 100%;
   border-radius: 10px;
+  margin-top: 50px;
 }
 .payment_tamle .title-row,
 .payment_tamle .item-row {
   display: flex;
   justify-content: space-between;
+}
+a.doc {
+  color: #535353;
+  background: url(../img/file_1.svg) no-repeat 0%;
+  padding-left: 25px;
+  display: block;
 }
 .title-row .title-item {
   width: 14.28%;
@@ -1037,6 +1044,31 @@ select {
   float: left;
   margin-right: 60px;
   box-shadow: 0px 0px 30px rgb(44 38 121 / 25%);
+}
+table.tg {
+  width: 100%;
+  margin-top: 30px;
+}
+th,
+td {
+  padding: 10px;
+}
+tbody tr {
+  border-bottom: 1px solid #ededed;
+}
+table.tg tbody tr:hover {
+  cursor: pointer;
+  background: rgb(128 118 242 / 6%);
+}
+.payment_tamle {
+  width: 100%;
+}
+support-table .table-head > *,
+.support-table .support-item > * {
+  width: 25%;
+}
+.support-table .table-head .table-head-item:nth-child(1) {
+  width: 25%;
 }
 .mesage-row.in .mesage-baloon:after {
   content: '';
