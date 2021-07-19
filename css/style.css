@@ -1,5 +1,5 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Manrope', sans-serif;
   font-size: 16px;
   color: #535353;
 }
@@ -72,15 +72,76 @@ input#serch {
 .tools {
   display: flex;
   align-items: center;
+  position: relative;
 }
 .tools > * {
   margin-left: 20px;
+}
+.chenger-acc {
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0px 0px 50px rgb(0 0 0 / 10%);
+  border-radius: 15px;
+  top: 0;
+  max-width: 264px;
+  z-index: 1;
+  padding: 0 20px;
+  right: -15px;
+  display: none;
+}
+.chenger-acc a.btn-border-add {
+  margin-bottom: 20px;
+}
+.tools.open .chenger-acc {
+  display: block;
+}
+.chenger-acc .item:last-of-type {
+  border: none;
+}
+.val.check-box label.tgl-btn {
+  margin: 0;
+}
+.chenger-acc .desc {
+  font-size: 10px;
+}
+.chenger-acc .val.check-box {
+  margin-right: 15px;
+}
+.chenger-acc .item {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #d7d7d7;
+  opacity: 0.7;
+}
+.chenger-acc .item.active,
+.chenger-acc .item:hover {
+  opacity: 1;
 }
 .header .name {
   font-weight: 600;
 }
 input {
   border: 0 !important;
+}
+.input-control.serch {
+  position: relative;
+}
+.input-control.serch input[type='text'] {
+  margin-top: 0;
+  padding-left: 45px;
+}
+.add-acc .profile-item-wrap {
+  margin-top: 20px;
+}
+.input-control.serch:after {
+  background: url(/img/fi_search.svg) no-repeat;
+  content: '';
+  position: absolute;
+  width: 35px;
+  height: 35px;
+  top: 15px;
+  left: 10px;
 }
 a.chat-start {
   display: flex;
@@ -172,7 +233,7 @@ span.sup__title {
   padding: 0;
 }
 p.balans {
-  font-family: 'PT Sans';
+  font-family: 'Manrope';
   font-size: 26px;
   font-weight: bold;
   display: flex;
@@ -196,7 +257,7 @@ menu ul a svg {
   margin-right: 5px;
 }
 .menu ul li {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 .menu:hover ul a {
   padding: 15px 20px;
@@ -212,6 +273,9 @@ menu ul a svg {
 .menu ul a.active svg {
   fill: #fff;
   transition: all 0.4s;
+}
+.menu ul a svg {
+  max-width: 20px;
 }
 .menu span.sup__title {
   display: inline-block;
@@ -263,7 +327,7 @@ p.balans span.green {
   border-bottom: 1px solid #e5e5e5;
 }
 .row.sub-header {
-  font-family: PT Sans;
+  font-family: Manrope;
   border-bottom: 1px solid #e5e5e5;
 }
 .sub-header-item.balans p {
@@ -455,10 +519,10 @@ a.back img {
   margin-right: 20px;
 }
 .baner-title-project .title-sum {
-  font-family: PT Sans;
+  font-family: Manrope;
 }
 .ditails-item .val {
-  font-family: PT Sans;
+  font-family: Manrope;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -550,7 +614,7 @@ a.doc {
   width: 14.28%;
   font-weight: 600;
   padding: 20px 0;
-  font-family: PT Sans;
+  font-family: Manrope;
   font-weight: 600;
   font-size: 20px;
 }

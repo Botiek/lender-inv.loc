@@ -14,4 +14,21 @@ $('document').ready(function () {
     $(this).closest('div').find('span').text('');
     $(this).hide();
   });
+
+  //смена пользователя
+  $('.tools .ava-control').on('click', function () {
+    $(this).closest('.tools').addClass('open');
+  });
+
+  $(document).mouseup(function (e) {
+    // событие клика по веб-документу
+    let div = $('.tools'); // тут указываем ID элемента
+    if (
+      !div.is(e.target) && // если клик был не по нашему блоку
+      div.has(e.target).length === 0
+    ) {
+      // и не по его дочерним элементам
+      div.removeClass('open'); // скрываем его
+    }
+  });
 });
