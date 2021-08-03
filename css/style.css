@@ -135,7 +135,7 @@ input {
   margin-top: 20px;
 }
 .input-control.serch:after {
-  background: url(/img/fi_search.svg) no-repeat;
+  background: url(../img/fi_search.svg) no-repeat;
   content: '';
   position: absolute;
   width: 35px;
@@ -1679,7 +1679,7 @@ a.btn-border-add {
   width: 70%;
   padding-right: 20px;
   padding-left: 25px;
-  background: url(/img/map.svg) no-repeat 0% 4px;
+  background: url(../img/map.svg) no-repeat 0% 4px;
   background-size: 19px;
 }
 .item-project.transport .desc-item .val {
@@ -1690,7 +1690,7 @@ span.arr {
   display: inline-block;
   width: 50px;
   height: 8px;
-  background: url(/img/arr_le.svg) no-repeat 50%;
+  background: url(../img/arr_le.svg) no-repeat 50%;
 }
 .val.proc {
   color: #5dbc12;
@@ -1728,10 +1728,10 @@ span.arr {
 }
 .title-wrap.transport .title {
   padding-left: 37px;
-  background: url(/img/map.svg) no-repeat 0 50%;
+  background: url(../img/map.svg) no-repeat 0 50%;
 }
 span.big-arr {
-  background: url(/img/arr_le.svg) no-repeat 50% 50%;
+  background: url(../img/arr_le.svg) no-repeat 50% 50%;
   display: inline-block;
   width: 65px;
   height: 15px;
