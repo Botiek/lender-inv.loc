@@ -1749,17 +1749,20 @@ div#map > img {
 }
 .details-blc-title {
   margin-top: 35px;
-  font-size: 26px;
+  font-size: 18px;
   color: #8076f3;
 }
 .details-item {
   display: flex;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 500;
 }
 .details-item .left {
   width: 270px;
   color: #808190;
+}
+.item-project.transport a.title {
+  color: #333333;
 }
 @media screen and (max-height: 850px) {
   .menu {
@@ -1782,6 +1785,9 @@ div#map > img {
 }
 
 @media screen and (max-width: 992px) {
+  .title-wrap.transport {
+    font-size: 16px;
+  }
   .payments-item > * {
     max-width: 100% !important;
     margin-bottom: 20px;
