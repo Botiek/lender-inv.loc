@@ -1382,7 +1382,7 @@ input[type='range']::-webkit-slider-thumb {
   color: #fff;
 }
 .item-project .title {
-  font-size: 32px;
+  font-size: 26px;
   font-weight: bold;
 }
 .item-project .desc-wrap {
@@ -1395,8 +1395,15 @@ input[type='range']::-webkit-slider-thumb {
 .desc-item {
   margin-right: 35px;
 }
+.item-project.transport .sup-title {
+  margin-right: 5px;
+}
+.item-project.transport .val.proc {
+  color: #5dbc12;
+}
 .item-project .sup-title {
   font-size: 12px;
+  margin-right: 5px;
 }
 .item-project .logo {
   width: 100%;
@@ -1666,8 +1673,9 @@ a.btn-border-add {
   padding-top: 10px;
 }
 .item-project.transport .desc-wrap {
-  display: block;
-  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 .item-project.transport .desc-item {
   margin-right: 0;
@@ -1675,7 +1683,6 @@ a.btn-border-add {
 .item-project.transport .title {
   font-size: 16px;
   font-weight: bold;
-  width: 70%;
   padding-right: 20px;
   padding-left: 25px;
   background: url(../img/map.svg) no-repeat 0% 4px;
@@ -1765,6 +1772,12 @@ div#map > img {
 }
 img {
   max-width: 100%;
+}
+input.js-amount-input {
+  border: 2px solid #7c73ed !important;
+}
+a.back {
+  margin-top: 20px;
 }
 @media screen and (max-height: 850px) {
   .menu {
