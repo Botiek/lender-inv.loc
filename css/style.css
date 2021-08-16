@@ -1511,8 +1511,7 @@ a.btn-border-add {
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
-
-  z-index: 2;
+  z-index: 999;
 }
 
 .popup {
@@ -1763,6 +1762,9 @@ div#map > img {
 }
 .item-project.transport a.title {
   color: #333333;
+}
+img {
+  max-width: 100%;
 }
 @media screen and (max-height: 850px) {
   .menu {
