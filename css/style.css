@@ -1779,6 +1779,48 @@ input.js-amount-input {
 a.back {
   margin-top: 20px;
 }
+a.edit-ico {
+  background: url(../img/edit.svg) no-repeat 50% 50%;
+  width: 21px;
+  height: 21px;
+  display: inline-block;
+  margin-left: 20px;
+}
+.wrap-support-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-border-send {
+  border: 2px solid #7c73ed;
+  display: inline-flex;
+  justify-items: center;
+  line-height: 1;
+  align-items: center;
+  border-radius: 10px;
+  color: #766de3;
+  font-weight: bold;
+  padding: 12px;
+  position: relative;
+}
+.row.profile-blc a.btn-border-send {
+  margin-top: 20px;
+}
+.hide {
+  display: none;
+}
+label {
+  margin-bottom: 0;
+}
+.wrap-ch-group {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.wrap-ch-group .txt {
+  padding-left: 10px;
+  font-size: 10px;
+}
 @media screen and (max-height: 850px) {
   .menu {
     overflow-y: scroll;
