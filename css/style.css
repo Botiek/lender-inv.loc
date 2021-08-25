@@ -1930,6 +1930,10 @@ span.opt-name-dot {
 }
 
 @media screen and (max-width: 992px) {
+  #topUpModal .popup.popup_modal {
+    max-height: 90vh;
+    overflow-x: auto;
+  }
   .history-section-in-wrap > .history-section {
     display: block !important;
   }
