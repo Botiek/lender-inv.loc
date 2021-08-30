@@ -1957,6 +1957,10 @@ a.btn-border-out.mod {
 .val.pas-num .input-control:nth-child(2) {
   max-width: 60%;
 }
+.wrap-action-modal.mod {
+  max-width: 50%;
+  margin-bottom: 35px;
+}
 @media screen and (max-height: 850px) {
   .menu {
     overflow-y: scroll;
