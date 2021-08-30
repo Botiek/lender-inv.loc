@@ -1947,6 +1947,16 @@ a.btn-border-out.download {
 a.btn-border-out.mod {
   padding-left: 60px;
 }
+.val.pas-num {
+  display: flex;
+}
+.val.pas-num .input-control:nth-child(1) {
+  margin-right: 20px;
+  max-width: 30%;
+}
+.val.pas-num .input-control:nth-child(2) {
+  max-width: 60%;
+}
 @media screen and (max-height: 850px) {
   .menu {
     overflow-y: scroll;
