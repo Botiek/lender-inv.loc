@@ -1961,6 +1961,26 @@ a.btn-border-out.mod {
   max-width: 50%;
   margin-bottom: 35px;
 }
+.btn-wrap.login {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.btn-clear {
+  background: #ffffff;
+  border: 2px solid #776ee4 !important;
+  color: #535353;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 53px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  font-size: 12px;
+  width: 140px;
+}
 @media screen and (max-height: 850px) {
   .menu {
     overflow-y: scroll;
