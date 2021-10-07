@@ -246,12 +246,12 @@ p.balans {
 .menu ul a {
   color: #535353;
   width: 100%;
-  padding: 15px 15px;
+  padding: 9px 15px;
   border-radius: 10px;
   display: block;
   transition: all 0.4s;
   background: transparent;
-  height: 53px;
+  height: 44px;
 }
 menu ul a svg {
   margin-right: 5px;
@@ -260,7 +260,7 @@ menu ul a svg {
   margin-bottom: 5px;
 }
 .menu:hover ul a {
-  padding: 15px 20px;
+  padding: 9px 20px;
 }
 .menu ul a:hover,
 .menu ul a.active {
@@ -1601,8 +1601,10 @@ a.btn-border-add {
   color: #808190;
 }
 .payments-item .title {
-  font-size: 20px;
+  font-size: 16px;
   font-weight: bold;
+  padding-right: 15px;
+  word-wrap: break-word;
 }
 .payments-item .from {
   font-size: 14px;
@@ -1981,7 +1983,87 @@ a.btn-border-out.mod {
   font-size: 12px;
   width: 140px;
 }
+.btn-control.duo a {
+  margin-right: 20px;
+}
+.row.profile-blc.accreditation-none {
+  opacity: .5;
+  pointer-events: none;
+}
+.popup .date {
+  font-size: 14px;
+}
+.popup .summ {
+  font-size: 35px;
+  font-weight: bold;
+}
+.popup .summ.plus {
+  color:#5DBC12;
+}
+.popup .summ.minus {
+  color:#FF0000;
+}
+.popup .status {
+  font-size: 14px;
+  font-weight: bold;
+}
+.popup .status:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #5DBC12;
+  margin-right: 5px;
+}
+.popup .item-wrap .title {
+  font-weight: bold;
+}
+.popup .desc {
+  font-size: 12px;
+}
+.popup .item-wrap {
+  border-top: 1px solid #E5E5E5;
+  margin: 15px 0;
+  padding-top: 10px;
+}
+.ico-blc.up {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: url(/img/arr_rb.svg) no-repeat;
+  right: 35px;
+  top: 35px;
+  background-size: cover;
+}
+.ico-blc.dwn {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: url(/img/arr_rt.svg) no-repeat;
+  right: 35px;
+  top: 35px;
+  background-size: cover;
+}
+.ico-blc.proc {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  background: url(/img/arr_proc.svg) no-repeat;
+  right: 35px;
+  top: 35px;
+  background-size: cover;
+}
+.payments-item .title-wrap {
+  width: 85%;
+}
 @media screen and (max-height: 850px) {
+  .item-project .action-wrap {
+    margin-top: 7px;
+}
+  .item-project .main-wrap {
+    margin-bottom: 5px;
+}
   .menu {
     overflow-y: scroll;
   }
@@ -2002,6 +2084,59 @@ a.btn-border-out.mod {
 }
 
 @media screen and (max-width: 992px) {
+  .payments-item {
+    padding: 20px;
+}
+  .ico-blc.up, .ico-blc.dwn, .ico-blc.proc {
+    height: 65px;
+    width: 65px;
+  }
+  .popup {
+    padding: 20px;
+}
+  .popup h3 {
+    font-size: 26px;
+}
+  .item-project {
+    margin-bottom: 20px;
+}
+  .item-project.transport .title {
+    line-height: 16px;
+    font-size: 16px;
+}
+  .item-project .sup-title {
+    font-size: 8px;
+    line-height: 5px;
+}
+  .item-project.transport .desc-item .val {
+    font-size: 14px;
+}
+  .item-project.transport .desc-wrap {
+    margin-bottom: 10px;
+}
+  .sup-wrap {
+    font-size: 12px;
+}
+  .item-project.transport .body-project {
+    padding: 20px;
+    padding-top: 0px;
+}
+  .item-project .head {
+    padding: 20px;
+}
+  .rating {
+    display: flex;
+}
+  .rating img {
+    max-width: 20px;
+}
+  .btn-border {
+    background-size: 20px;
+}
+  .item-project.transport a.btn-border {
+    font-size: 10px;
+    padding: 12px 37px 12px 12px;
+}
   #topUpModal .popup.popup_modal {
     max-height: 90vh;
     overflow-x: auto;
@@ -2173,14 +2308,16 @@ a.btn-border-out.mod {
   }
 }
 @media screen and (max-width: 480px) {
+  .item-project.transport .type {;
+    font-size: 12px;
+}
   .action-wrap .btn-control {
-    margin-top: 20px;
     margin-bottom: 0;
   }
   .item-project.transport .desc-wrap {
     width: 100%;
     text-align: left;
-    margin-top: 20px;
+    margin-top: 5px;
   }
   .item-project.transport .title {
     width: 100%;
