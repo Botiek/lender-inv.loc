@@ -1932,7 +1932,7 @@ p.sup-desc {
   margin-right: 10px;
 }
 .attention {
-  background: url(/img/fi_alert.svg) no-repeat 0%;
+  background: url(../img/fi_alert.svg) no-repeat 0%;
   padding-left: 30px;
   font-size: 14px;
   font-weight: bold;
@@ -2032,7 +2032,7 @@ a.btn-border-out.mod {
   width: 100px;
   height: 100px;
   position: absolute;
-  background: url(/img/arr_rb.svg) no-repeat;
+  background: url(../img/arr_rb.svg) no-repeat;
   right: 35px;
   top: 35px;
   background-size: cover;
@@ -2041,7 +2041,7 @@ a.btn-border-out.mod {
   width: 100px;
   height: 100px;
   position: absolute;
-  background: url(/img/arr_rt.svg) no-repeat;
+  background: url(../img/arr_rt.svg) no-repeat;
   right: 35px;
   top: 35px;
   background-size: cover;
@@ -2050,7 +2050,7 @@ a.btn-border-out.mod {
   width: 100px;
   height: 100px;
   position: absolute;
-  background: url(/img/arr_proc.svg) no-repeat;
+  background: url(../img/arr_proc.svg) no-repeat;
   right: 35px;
   top: 35px;
   background-size: cover;
