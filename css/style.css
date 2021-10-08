@@ -1845,6 +1845,7 @@ p.balans > a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #535353;
 }
 .history-item .data {
   font-size: 10px;
