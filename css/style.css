@@ -2394,7 +2394,7 @@ a.btn-border-out.download {
   }
 }
 @media screen and (max-width: 480px) {
-  .item-project.transport .type {;
+  .item-project.transport .type {
     font-size: 12px;
 }
   .action-wrap .btn-control {
