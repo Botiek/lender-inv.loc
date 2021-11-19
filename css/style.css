@@ -364,6 +364,18 @@ a.logout {
   background: url(../img/white/fi_settings.svg) no-repeat 13px 50%, linear-gradient(
     180deg, #6860cc 0%, #857bfb 100%);
 }
+.mobile-sidebar__item.offers {
+  background: url(../img/lilac/u_chart-pie.svg) no-repeat 50% 0% / 24px;
+  padding-top: 24px;
+}
+.mobile-sidebar__item.briefcase {
+  background: url(../img/lilac/u_chart-growth.svg) no-repeat 50% 0% / 24px;
+  padding-top: 24px;
+}
+.mobile-sidebar__item.profile {
+  background: url(../img/lilac/u_file-info-alt.svg) no-repeat 50% 0% / 24px;
+  padding-top: 24px;
+}
 p.balans span.hid {
   transition: transform 0.8s, width 1s, opacity 0s;
 }
@@ -519,7 +531,6 @@ a.project-item {
 }
 .project-item .sup-title {
   font-size: 14px;
-  font-weight: bold;
   color: #989898;
 }
 .tab-content {
@@ -1546,7 +1557,7 @@ a.btn.btn-lg.btn-outline-success {
   line-height: 1;
   align-items: center;
   border-radius: 10px;
-  color: #766de3;
+  color: #333;
   font-weight: bold;
   padding: 17px 20px 17px 45px !important;
   position: relative;
@@ -2221,7 +2232,7 @@ a.btn-border-out.download {
 }
   .item-project.transport a.btn-border {
     font-size: 10px;
-    padding: 12px 37px 12px 12px;
+    padding: 13px 53px 13px 12px;
 }
   #topUpModal .popup.popup_modal {
     max-height: 90vh;
@@ -2394,6 +2405,17 @@ a.btn-border-out.download {
   }
 }
 @media screen and (max-width: 480px) {
+  .btn-control.duo a {
+    margin-right: 0;
+}
+  .btn-control.duo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.btn-control.duo a {
+  margin-bottom: 20px;
+}
   .item-project.transport .type {
     font-size: 12px;
 }
@@ -2467,4 +2489,27 @@ form#ticketMessageForm > .btn-control {
 .wrap-action-modal .input-control {
   width: 74%;
   margin-bottom: 0;
+}
+.mobile-sidebar__item svg {
+  fill: #766de3;
+}
+.project-Invested .num {
+  color: #7b72ea;
+}
+a.project-item.deal .wrap-row-info {
+  margin-top: 0;
+  align-items: end;
+}
+a.project-item.deal .type:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #5DBC12;
+  margin-right: 5px;
+}
+a.project-item.deal .type {
+  color: #333;
+  font-size: 10px;
 }
