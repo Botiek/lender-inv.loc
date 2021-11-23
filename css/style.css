@@ -535,6 +535,12 @@ a.project-item {
 }
 .tab-content {
   margin-top: 30px;
+  width: 100%;
+}
+.col-md-12.project-tabs-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 a.project-item:hover {
   border: 1px solid #989898;
@@ -2512,4 +2518,25 @@ a.project-item.deal .type:before {
 a.project-item.deal .type {
   color: #333;
   font-size: 10px;
+}
+.col-md-12.project-tabs-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+a.project-item.deal {
+  position: relative;
+}
+a.project-item.deal .close-popup:after {
+  width: 15px;
+}
+a.project-item.deal .close-popup:before {
+  width: 15px;
+}
+a.project-item.deal .close-popup {
+  width: 15px;
+  height: 15px;
+}
+a.project-item.deal {
+  position: relative;
 }
