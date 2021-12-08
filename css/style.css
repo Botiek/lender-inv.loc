@@ -2668,6 +2668,20 @@ span.sup-desc {
 .card-item .wrap-ch-group-regul .txt {
 padding-left: 0; 
 }
+.title-wrap.transport .status.finish {
+  color: #333;
+  background: url(../img/finish.svg) no-repeat 100%;
+  padding-right: 25px;
+}
+.title-wrap.transport .status.fail {
+  color: #FF0000;
+}
+.title-wrap.transport .status.cancel {
+  color: #808190;
+}
+.title-wrap.transport .status.green {
+  color: #5dbc12;
+}
 @media screen and (max-width: 992px) {
   .title-wrap.transport .title {
     font-size: 16px;
