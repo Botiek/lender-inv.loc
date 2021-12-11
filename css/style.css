@@ -1539,7 +1539,7 @@ a.btn-border-add {
 .btn-border:hover,
 a.btn-border-add:hover {
   box-shadow: 0px 10px 20px rgba(133, 123, 251, 0.25);
-  color: #fff;
+  color: #333;
   background: url(../img/white/fi_arrow-left-circle.svg) no-repeat right 24px
       top 50% / 24px,
     linear-gradient(180deg, #6860cc 0%, #857bfb 100%);
@@ -2681,6 +2681,20 @@ padding-left: 0;
 }
 .title-wrap.transport .status span.green {
   color: #5dbc12;
+}
+.tab-content .profile-item-wrap {
+  width: 100%;
+}
+.tab-content .input-control:first-child {
+  margin-bottom: 0;
+}
+.tab-content .wrap-ch-group .txt {
+  padding-left: 10px;
+  font-size: 12px;
+  font-weight: bolder;
+}
+.tab-content h2 {
+  margin-bottom: 35px;
 }
 @media screen and (max-width: 992px) {
   .title-wrap.transport .title {
