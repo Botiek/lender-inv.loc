@@ -2696,6 +2696,12 @@ padding-left: 0;
 .tab-content h2 {
   margin-bottom: 35px;
 }
+.reg-form .suggestions {
+  top: 77px;
+}
+.reg-form  .suggestions > * {
+  padding: 5px 0px;
+}
 @media screen and (max-width: 992px) {
   .title-wrap.transport .title {
     font-size: 16px;
