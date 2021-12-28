@@ -934,7 +934,7 @@ input[disabled="disabled"] {
   top: 36px;
 }
 
-#file-input {
+#file-input, input[type="file"] {
   display: none;
 }
 
@@ -984,7 +984,7 @@ label[for="file-input"] span {
   max-height: 160px;
   overflow-x: hidden;
   overflow-y: scroll;
-  max-width: 100%;
+  max-width: 700px;
 }
 .suggestions > * {
   padding: 5px 15px;
@@ -1809,7 +1809,7 @@ a.btn.btn-lg.btn-outline-success {
   font-weight: bold;
   padding-right: 20px;
   padding-left: 25px;
-  background: url(../img/map.svg) no-repeat 0% 4px;
+  background: url(../img/map.svg) no-repeat 0% 50%;
   background-size: 19px;
 }
 .item-project.transport .desc-item .val {
@@ -2453,7 +2453,7 @@ a.btn-border-out.download {
   .item-project.transport .desc-wrap {
     width: 100%;
     text-align: left;
-    margin-top: 5px;
+    margin-top: 10px;
   }
   .item-project.transport .title {
     width: 100%;
@@ -2570,10 +2570,10 @@ a.project-item.deal {
   margin-top: 20px;
 }
 .big-summ {
-  font-size: 75px;
+  font-size: 48px;
   font-weight: bold;
   display: flex;
-  line-height: 75px;
+  line-height: 48px;
   flex-wrap: wrap;
 }
 .already {
@@ -2587,9 +2587,9 @@ a.project-item.deal {
   line-height: 22px;
 }
 .date .date-name {
-  font-size: 45px;
+  font-size: 30px;
   font-weight: bold;
-  line-height: 45px;
+  line-height: 38px;
 }
 .date,
 .proc,
@@ -2604,9 +2604,9 @@ a.project-item.deal {
   color: #5dbc12;
 }
 .cargo .cargo-name {
-  font-size: 35px;
+  font-size: 20px;
   font-weight: bold;
-  line-height: 35px;
+  line-height: 30px;
 }
 .summ-sticker {
   background: #857bfb;
@@ -2632,7 +2632,7 @@ a.project-item.deal {
   width: 55%;
 }
 .row-wrap .name {
-  font-size: 22px;
+  font-size: 18px;
   color: #808190;
 }
 .row-wrap {
@@ -2641,7 +2641,7 @@ a.project-item.deal {
   margin-bottom: 10px;
 }
 .row-wrap .desc {
-  font-size: 26px;
+  font-size: 18px;
 }
 
 .wrap-ch-group-regul .txt {
@@ -2701,6 +2701,10 @@ padding-left: 0;
 }
 .reg-form  .suggestions > * {
   padding: 5px 0px;
+}
+.body-project .val.proc {
+  line-height: initial;
+  margin-top: 0;
 }
 @media screen and (max-width: 992px) {
   .title-wrap.transport .title {
