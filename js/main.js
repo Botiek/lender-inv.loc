@@ -1,6 +1,6 @@
 $('document').ready(function () {
   $('.file-btn').click(function () {
-    $(this).closest('label').closest('div').find('input').trigger('click');
+    $(this).closest('label').closest('div').find('input');
   });
 
   $('.file-input').on('change', function () {
