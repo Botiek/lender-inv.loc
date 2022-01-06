@@ -148,6 +148,25 @@
                 </div>
             </div>
         </div>
+        <div class="row profile-blc status-no-verify">
+            <div class="col-md-12">
+                <h2 class="title-profilw">Статус квалификации </h2>
+                <div class="profile-item-wrap">
+                    <div class="name">Квалификация:</div>
+                    <div class="val">Не определена</div>
+                </div>
+                <div class="desc">
+                    <p>В соответствии с 259-ФЗ «О привлечении инвестиций с использованием инвестиционных платформ», физические лица, не являющиеся квалифицированными инвесторами, могут инвестировать на всех
+                        инвестиционных платформах не более 600 000 рублей в календарном году.
+                        Платформа вынуждена ограничить возможность инвестирования для физических лиц, если сумма их инвестиций превысит 600 000 рублей с начала календарного года. Для того, чтобы не попасть под
+                        ограничения, необходимо подтвердить статус квалифицированного инвестора, предоставив платформе документ(ы), подтверждающие один (или несколько) из пунктов.</p>
+                    <div class="btn-control duo">
+                        <a href="" class="btn-border-edit circs-modal">Подтвердить квалификацию</a>
+                        <a href="" class="btn-border-edit">Продолжить без квалификации</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="row profile-blc">
             <div class="col-md-12">
                 <h2 class="title-profilw">Данные о компаниие</h2>
@@ -426,12 +445,94 @@
 
 
 
+    <footer>
+        <div class="overlay overlay_modal circs" style="display: none">
+            <div class="popup popup_modal out">
+                <div class="close-popup close-modal"></div>
+                <h3>Заявка на вывод средвств</h3>
+                <p>Выберите выполненное вами условие(-ия), необходимое для получения статуса квалифицированного инвестора, и загрузите подтверждающий документ.</p>
+                <div class="circs-wrap">
+                    <div class="circs-item">
+                        <input type="file" id="file-input-circs-0" class="file-input">
+                        <label for="file-input-circs-0">
+                            <div class="file-btn">Высшее экономическое образование в ВУЗе с правом аттестации профучастника</div>
+                            <span></span>
+                            <i class="remove" style="display: none">x</i>
+                        </label>
+                    </div>
+                
+                    <div class="circs-item">
+                        <input type="file" id="file-input-circs-1" class="file-input">
+                        <label for="file-input-circs-1">
+                            <div class="file-btn">Общая стоимость ценных бумаг и производных > 6 млн</div>
+                            <span></span>
+                            <i class="remove" style="display: none">x</i>
+                        </label>
+                    </div>
+                
+                    <div class="circs-item">
+                        <input type="file" id="file-input-circs-2" class="file-input">
+                        <label for="file-input-circs-2">
+                            <div class="file-btn">Опыт работы в финансовой компании&nbsp;> 2 лет</div>
+                            <span></span>
+                            <i class="remove" style="display: none">x</i>
+                        </label>
+                    </div>
+                
+                    <div class="circs-item">
+                        <input type="file" id="file-input-circs-3" class="file-input">
+                        <label for="file-input-circs-3">
+                            <div class="file-btn">Депозитные, металлические счета > 6 млн</div>
+                            <span></span>
+                            <i class="remove" style="display: none">x</i>
+                        </label>
+                    </div>
+                
+                    <div class="circs-item">
+                        <input type="file" id="file-input-circs-4" class="file-input">
+                        <label for="file-input-circs-4">
+                            <div class="file-btn">Активная торговля ценными бумагами и производными на сумму > 6 млн</div>
+                            <span></span>
+                            <i class="remove" style="display: none">x</i>
+                        </label>
+                    </div>
+                </div>
+                <a href="" class="btn-border-out">Подтвердить</a>
+            </div>
+        </div>
         <!-- JavaScript================================================== -->
         <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js"></script>
         <script src="/js/main.js"></script>
         <script src="/js/jquery.maskedinput.min.js"></script>
+        <script>
+            $(document).ready(function () {
+    
+                // открыть по кнопке
+                $('.circs-modal').click(function (event) {
+                    event.preventDefault();
+                    $('.overlay_modal.circs').fadeIn();
+                    $('.overlay_modal.circs').addClass('disabled');
+                    $('body').css('overflow', 'hidden');
+                });
+    
+                // закрыть на крестик
+                $('.close-modal').click(function () {
+                    $('.overlay_modal.circs').fadeOut();
+                    $('body').css('overflow', 'auto');
+                });
+    
+                // закрыть по клику вне окна
+                $(document).mouseup(function (e) {
+                    var popup = $('.popup_modal');
+                    if (e.target != popup[0] && popup.has(e.target).length === 0) {
+                        $('.overlay_modal.circs').fadeOut();
+                        $('body').css('overflow', 'auto');
+                    }
+                });
+            });
+        </script>
     </footer>
 </body>
 
