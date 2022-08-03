@@ -504,7 +504,7 @@ a.nav-link {
   align-items: center;
   justify-content: center;
 }
-a.project-item {
+.project-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -547,8 +547,8 @@ a.project-item {
   justify-content: space-between;
   flex-wrap: wrap;
 }
-a.project-item:hover {
-  border: 1px solid #989898;
+.project-item:hover {
+  border: 1px solid #fff;
   text-decoration: none;
 }
 a.back {
@@ -1542,7 +1542,7 @@ a.btn-border-add {
 .btn-border:hover,
 a.btn-border-add:hover {
   box-shadow: 0px 10px 20px rgba(133, 123, 251, 0.25);
-  color: #333;
+  color: #fff;
   background: url(../img/white/fi_arrow-left-circle.svg) no-repeat right 24px
       top 50% / 24px,
     linear-gradient(180deg, #6860cc 0%, #857bfb 100%);
@@ -2170,6 +2170,109 @@ a.btn-border-out.download {
 .payments-item .title-wrap {
   width: 85%;
 }
+.borrower .wrap-row-info {
+  flex-direction: column;
+  margin-top: 0;
+  gap: 10px;
+}
+.borrower .project-item .Invested {
+  font-size: 25px;
+  line-height: 25px;
+  margin-top: 10px;
+}
+.borrower .project-item .Invested span {
+  color: #5dbc12;
+}
+.borrower .project-item .sup-title {
+  font-size: 10px;
+}
+.borrower .date-pay {
+  font-size: 12px;
+}
+.borrower a.btn-border-add, .borrower a.btn-border-out {
+  font-size: 12px;
+}
+.borrower .btn-control.money {
+  display: flex;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.borrower .num {
+  font-size: 10px;
+}
+.borrower .type:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #5dbc12;
+  margin-right: 5px;
+}
+.borrower .type {
+  color: #333;
+  font-size: 10px;
+}
+.borrower .project-Invested.mod {
+  display: flex;
+  justify-content: space-between;
+}
+.borrower .bid {
+  font-size: 20px;
+  font-weight: bold;
+  color: #5dbc12;;
+}
+.borrower .term {
+  font-size: 20px;
+  font-weight: bold;
+}
+.borrower .project-item .sup-title.bid-title:before {
+  content: "";
+  background: url(../img/arr-up.svg) 100% no-repeat;
+  background-size: cover;
+  width: 20px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 6px;
+}
+.borrower .project-item .sup-title.term-title:before {
+  content: "";
+  background: url(../img/calendar.svg) 100% no-repeat;
+  background-size: cover;
+  width: 11px;
+  height: 11px;
+  display: inline-block;
+  margin-right: 6px;
+}
+.borrower .progress-wrap {
+  background: #f7f7f7;
+  height: 14px;
+  width: 100%;
+  border-radius: 100px;
+  position: relative;
+  margin-right: 30px;
+}
+.borrower .progres-bar {
+  background: linear-gradient(180deg, #6860cc 0%, #857bfb 100%);
+  border-radius: 100px;
+  height: 14px;
+  max-width: 470px;
+}
+.borrower .wrap-progres .sub-title {
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+}
+.borrower .val span:first-child {
+  font-size: 20px;
+  font-weight: bold;
+}
+.borrower .history-item {
+  width: 100%;
+}
+div#operations .btn-control.money {
+  margin-top: 35px;
+}
 @media screen and (max-height: 850px) {
   .item-project .action-wrap {
     margin-top: 7px;
@@ -2191,12 +2294,16 @@ a.btn-border-out.download {
   }
 }
 @media screen and (min-width: 992px) {
+
   body > .container {
     padding: 0 100px 150px;
   }
 }
 
 @media screen and (max-width: 992px) {
+  .project-item {
+    width: 100%;
+  }
   .btn-item-wrap.s-b {
     flex-wrap: wrap;
   }
