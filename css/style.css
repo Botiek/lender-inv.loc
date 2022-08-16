@@ -2273,6 +2273,90 @@ a.btn-border-out.download {
 div#operations .btn-control.money {
   margin-top: 35px;
 }
+.loan .item-row .item {
+  font-size: 16px;
+}
+.loan .title-row .title-item {
+  font-size: 12px;
+  text-align: left;
+}
+.col-md-12.card-item.loan {
+  display: flex;
+}
+.col-md-12.card-item.loan .in-wrap {
+  margin-right: 25px;
+}
+.loan .cargo {
+  margin-top: 28px;
+}
+.history-section .title span {
+  font-size: 10px;
+  font-weight: normal;
+  display: block;
+  margin-bottom: -5px;
+}
+.history-item .summ span, .bid span, .term span, .canc span, .finish span, .finish-date span, .deli span {
+  font-size: 10px;
+  display: block;
+  text-align: left;
+  color: #535353;
+  font-weight: normal;
+  margin-bottom: -5px;
+}
+.row.history-item-wrap.mod .history-section-in-wrap > .history-section {
+  width: auto;
+  text-align: left;
+}
+.history-item .summ.mod {
+  color: #989898;
+  font-size: 22px;
+  font-weight: bold;
+}
+.bid .val {
+  font-size: 21px;
+  font-weight: bold;
+}
+.row.history-item-wrap.mod .history-section:nth-child(3) {
+  width: auto;
+  text-align: left;
+}
+.row.history-item-wrap.mod .history-section:nth-child(1) {
+  width: auto;
+  max-width: 250px;
+}
+.term .val, .canc .val, .finish .val, .finish-date .val, .deli .val {
+    font-size: 20px;
+    font-weight: bold;
+}
+.history-section .bid {
+  text-align: left;
+}
+.history-section .title .name {
+  line-height: 1;
+  margin: 5px 0;
+}
+@media screen and (max-width: 1200px) {
+  .loan .item-row .item {
+    font-size: 14px;
+}
+}
+@media screen and (max-width: 1150px) {
+  .row.history-item-wrap.mod .history-item {
+    flex-wrap: wrap;
+  }
+  .row.history-item-wrap.mod .history-section {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .history-section:nth-child(2) {
+    text-align: left;
+  }
+  .row.history-item-wrap a.btn-border-out {
+    margin-top: 35px;
+    display: block;
+    margin: 0 auto;
+}
+}
 @media screen and (max-height: 850px) {
   .item-project .action-wrap {
     margin-top: 7px;
@@ -2301,6 +2385,16 @@ div#operations .btn-control.money {
 }
 
 @media screen and (max-width: 992px) {
+  .col-md-12.card-item.loan {
+    flex-wrap: wrap;
+  }
+  .payment_tamle {
+    min-width: 1000px;
+  }
+  .table-pre-wrap.loan {
+    overflow-y: auto;
+  }
+
   .project-item {
     width: 100%;
   }
@@ -2545,6 +2639,9 @@ div#operations .btn-control.money {
   .mobile-sidebar {
     display: flex;
   }
+}
+@media screen and (max-width: 575px) {
+
 }
 @media screen and (max-width: 480px) {
   .btn-control.duo a {
