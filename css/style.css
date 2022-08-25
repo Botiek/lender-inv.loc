@@ -2335,6 +2335,11 @@ div#operations .btn-control.money {
   line-height: 1;
   margin: 5px 0;
 }
+.sub-header-item.balans .sub-title p {
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
 @media screen and (max-width: 1200px) {
   .loan .item-row .item {
     font-size: 14px;
