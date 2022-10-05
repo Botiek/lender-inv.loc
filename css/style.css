@@ -107,6 +107,8 @@ input#serch {
 }
 .chenger-acc .val.check-box {
   margin-right: 15px;
+  z-index: 0;
+  appearance: none;
 }
 .chenger-acc .item {
   display: flex;
